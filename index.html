@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lefkada Lowkey Guide</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">LG</div>
+          <div>
+            <p class="eyebrow" data-i18n="brandKicker">Ghid lowkey pentru Grecia</p>
+            <h1 data-i18n="brandTitle">Greek Lowkey Guide</h1>
+            <p class="muted" data-i18n="brandText">Plaje, caini, kite, barci, cazari directe.</p>
+          </div>
+        </div>
+
+        <div class="language-switch" aria-label="Language">
+          <button class="lang-btn active" type="button" data-lang="ro">RO</button>
+          <button class="lang-btn" type="button" data-lang="en">EN</button>
+        </div>
+
+        <section class="account-card" id="accountCard">
+          <div class="account-user" id="accountSignedOut">
+            <div class="account-avatar">?</div>
+            <div>
+              <p class="eyebrow">Account</p>
+              <strong data-i18n="signedOut">Nelogat</strong>
+            </div>
+          </div>
+          <div class="account-user hidden" id="accountSignedIn">
+            <div class="account-avatar" id="accountAvatar">G</div>
+            <div>
+              <p class="eyebrow">Account</p>
+              <strong id="accountName">Guest</strong>
+              <span id="accountEmail"></span>
+            </div>
+          </div>
+          <div class="account-actions" id="accountActions">
+            <button class="google-btn" type="button" id="googleLogin">Google</button>
+            <button class="ghost" type="button" id="emailLogin" data-i18n="emailLogin">Email</button>
+            <button class="danger-text hidden" type="button" id="logoutBtn" data-i18n="logout">Logout</button>
+          </div>
+        </section>
+
+        <nav class="nav-tabs" aria-label="Navigare aplicatie">
+          <button class="nav-tab active" type="button" data-view="discoverView" data-i18n="navDiscover">Descopera</button>
+          <button class="nav-tab" type="button" data-view="plannerView" data-i18n="navPlanner">Planul meu</button>
+          <button class="nav-tab" type="button" data-view="premiumView" data-i18n="navPremium">Premium</button>
+        </nav>
+
+        <div class="side-card">
+          <p class="eyebrow" data-i18n="sideToday">Azi in aplicatie</p>
+          <div class="metric-line">
+            <span data-i18n="sidePlaces">Locuri seed</span>
+            <strong id="sidePlaceCount">0</strong>
+          </div>
+          <div class="metric-line">
+            <span data-i18n="sidePremium">Premium</span>
+            <strong id="sidePremiumCount">0</strong>
+          </div>
+          <div class="metric-line">
+            <span data-i18n="sideSaved">Salvate</span>
+            <strong id="sideSavedCount">0</strong>
+          </div>
+        </div>
+
+        <div class="premium-mini">
+          <p class="eyebrow">Business Model</p>
+          <strong data-i18n="freeModel">Free pentru turisti</strong>
+          <span data-i18n="premiumMini">Cash din lead-uri, featured listings si concierge.</span>
+          <button class="primary full" type="button" id="openPremium" data-i18n="unlockButton">Deblocheaza</button>
+        </div>
+      </aside>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="heroKicker">MVP turism Grecia</p>
+            <h2 data-i18n="heroTitle">Tot ce vrei pe insula, fara scroll prin 40 de bloguri.</h2>
+            <p data-i18n="heroText">Filtre pentru pet-friendly, kite, barci de zi, plaje ascunse, cazari directe si locuri bune pe vant.</p>
+          </div>
+          <div class="hero-panel">
+            <span data-i18n="heroPanelLabel">Pret test</span>
+            <strong>Free</strong>
+            <small data-i18n="heroPanelText">monetizare din business</small>
+          </div>
+        </section>
+
+        <section class="topbar">
+          <div>
+            <p class="eyebrow" data-i18n="viewKicker">Ghid rapid</p>
+            <h2 id="viewTitle" data-i18n="navDiscover">Descopera</h2>
+          </div>
+          <div class="stats-row" aria-label="Statistici">
+            <div>
+              <span id="placeCount">0</span>
+              <small data-i18n="statPlaces">locuri</small>
+            </div>
+            <div>
+              <span id="premiumCount">0</span>
+              <small>premium</small>
+            </div>
+            <div>
+              <span id="savedCount">0</span>
+              <small data-i18n="statSaved">salvate</small>
+            </div>
+          </div>
+        </section>
+
+        <section class="view active" id="discoverView">
+          <div class="toolbar panel">
+            <label class="search-box">
+              <span data-i18n="searchLabel">Cauta</span>
+              <input id="searchInput" type="search" placeholder="Porto Katsiki, dog, kite..." />
+            </label>
+            <div class="filter-stack">
+              <span data-i18n="destinationLabel">Zona</span>
+              <div class="filter-group" id="destinationFilters"></div>
+            </div>
+            <div class="filter-group" id="categoryFilters"></div>
+          </div>
+
+          <div class="spotlight-grid">
+            <article class="spotlight-card">
+              <p class="eyebrow">Pet friendly</p>
+              <h3 data-i18n="spotPetTitle">Unde mergi cu catelul</h3>
+              <p data-i18n="spotPetText">Plaje mai late, zone mai libere, note despre organizare si bun simt local.</p>
+            </article>
+            <article class="spotlight-card">
+              <p class="eyebrow">Kite / wind</p>
+              <h3 data-i18n="spotKiteTitle">Agios Ioannis si Vasiliki</h3>
+              <p data-i18n="spotKiteText">Spoturi pentru vant, lectii, zone de evitat si timing pe dupa-amiaza.</p>
+            </article>
+            <article class="spotlight-card">
+              <p class="eyebrow">Day boat</p>
+              <h3 data-i18n="spotBoatTitle">Barca pentru o zi</h3>
+              <p data-i18n="spotBoatText">Nidri, Vasiliki, Meganisi, golfuri mici si intrebari de pus inainte sa platesti.</p>
+            </article>
+          </div>
+
+          <div class="places-grid" id="placesGrid"></div>
+        </section>
+
+        <section class="view" id="plannerView">
+          <div class="panel planner-panel">
+            <div>
+              <p class="eyebrow" data-i18n="plannerKicker">Plan personal</p>
+              <h3 data-i18n="plannerTitle">Locurile salvate pentru vacanta</h3>
+              <p class="muted" data-i18n="plannerText">MVP local: lista se salveaza in browser. Mai tarziu o legam de cont si plata reala.</p>
+            </div>
+            <button class="ghost" type="button" id="clearSaved" data-i18n="clearSaved">Goleste planul</button>
+          </div>
+          <div class="saved-list" id="savedList"></div>
+        </section>
+
+        <section class="view" id="premiumView">
+          <div class="premium-layout">
+            <article class="panel price-card">
+              <p class="eyebrow">Premium Pass</p>
+              <h3>EUR 3.99</h3>
+              <p data-i18n="priceText">Lifetime pentru lansare. Dupa ce creste ghidul, poti testa EUR 4.99-7.99.</p>
+              <button class="primary" type="button" id="mockBuy" data-i18n="mockBuy">Activeaza demo premium</button>
+            </article>
+            <article class="panel">
+              <p class="eyebrow" data-i18n="premiumIncludes">Include</p>
+              <ul class="benefit-list">
+                <li data-i18n="benefitHidden">plaje ascunse si acces dificil explicat clar</li>
+                <li data-i18n="benefitPet">filtru pet-friendly si reguli de bun simt</li>
+                <li data-i18n="benefitBoat">day boat, rent-a-boat si rute de o zi</li>
+                <li data-i18n="benefitStay">cazari directe verificate editorial</li>
+                <li data-i18n="benefitOffline">harta offline / PDF in versiunea urmatoare</li>
+              </ul>
+            </article>
+            <article class="panel warning-card">
+              <p class="eyebrow">Important</p>
+              <h3 data-i18n="warningTitle">Nu vindem promisiuni false</h3>
+              <p data-i18n="warningText">Locurile trebuie verificate, preturile se schimba, iar regulile locale pot fi diferite de la plaja la plaja.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <template id="placeTemplate">
+      <article class="place-card">
+        <div class="place-media">
+          <span class="tag category-tag"></span>
+          <span class="tag premium-tag">Premium</span>
+        </div>
+        <div class="place-body">
+          <div class="place-head">
+            <div>
+              <p class="eyebrow place-area"></p>
+              <h3 class="place-name"></h3>
+            </div>
+            <button class="icon-btn save-btn" type="button" aria-label="Save">+</button>
+          </div>
+          <p class="place-summary"></p>
+          <div class="meta-row"></div>
+          <div class="place-actions">
+            <button class="ghost details-btn" type="button" data-i18n="details">Detalii</button>
+            <a class="map-link" target="_blank" rel="noreferrer" data-i18n="map">Harta</a>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <div class="modal" id="detailModal" aria-hidden="true">
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="close-btn" type="button" id="closeModal" aria-label="Close">x</button>
+        <p class="eyebrow" id="modalCategory"></p>
+        <h3 id="modalTitle"></h3>
+        <p id="modalText"></p>
+        <div class="modal-meta" id="modalMeta"></div>
+      </div>
+    </div>
+
+    <div class="modal" id="loginModal" aria-hidden="true">
+      <form class="modal-card login-card" id="loginForm" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+        <button class="close-btn" type="button" id="closeLogin" aria-label="Close">x</button>
+        <p class="eyebrow">Account MVP</p>
+        <h3 id="loginTitle" data-i18n="emailLoginTitle">Login cu email</h3>
+        <label>
+          Email
+          <input id="loginEmail" type="email" required placeholder="you@example.com" />
+        </label>
+        <button class="primary" type="submit" data-i18n="loginNow">Intra</button>
+        <p class="muted" data-i18n="loginNote">MVP local: nu salvam parola. Pentru productie folosim Google OAuth/Firebase/Supabase.</p>
+      </form>
+    </div>
+
+    <section class="assistant-widget left" id="assistantWidget" aria-label="AI travel assistant">
+      <button class="assistant-toggle" type="button" id="assistantToggle">
+        <span>AI</span>
+      </button>
+      <div class="assistant-panel" id="assistantPanel">
+        <div class="assistant-head">
+          <div>
+            <p class="eyebrow">Greek Guide AI</p>
+            <h3 data-i18n="assistantTitle">Intreaba ghidul</h3>
+          </div>
+          <button class="close-btn inline" type="button" id="assistantClose">x</button>
+        </div>
+        <div class="assistant-messages" id="assistantMessages"></div>
+        <form class="assistant-form" id="assistantForm">
+          <input id="assistantInput" autocomplete="off" placeholder="Ex: unde merg cu copil si catel in Thasos?" />
+          <button class="primary" type="submit" data-i18n="assistantSend">Trimite</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>

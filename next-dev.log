@@ -1,0 +1,37 @@
+
+> sharo-kebab-loyalty@1.0.0 dev
+> next dev --hostname 127.0.0.1 --port 3003
+
+   ▲ Next.js 15.5.18
+   - Local:        http://127.0.0.1:3003
+   - Network:      http://127.0.0.1:3003
+
+ ✓ Starting...
+ ✓ Ready in 5.1s
+ ○ Compiling /sharo-kebab ...
+ ✓ Compiled /sharo-kebab in 15.7s (636 modules)
+ GET /sharo-kebab 200 in 327ms
+ ○ Compiling /api/ai ...
+ ✓ Compiled /api/ai in 6.3s (698 modules)
+ POST /api/ai 200 in 6934ms
+ ○ Compiling /api/loyalty ...
+ ✓ Compiled /api/loyalty in 786ms (687 modules)
+ POST /api/loyalty 200 in 1132ms
+ POST /api/loyalty 200 in 44ms
+ ○ Compiling /admin/dashboard ...
+ ✓ Compiled /admin/dashboard in 890ms (703 modules)
+ GET /admin/dashboard 200 in 1652ms
+ ○ Compiling /admin/qr ...
+ ✓ Compiled /admin/qr in 5.6s (841 modules)
+ GET /admin/qr 200 in 6808ms
+ ○ Compiling /sharo-kebab/review ...
+ ✓ Compiled /sharo-kebab/review in 2.2s (851 modules)
+ GET /sharo-kebab/review 200 in 3001ms
+ ⚠ Found a change in next.config.mjs. Restarting the server to apply the changes...
+   ▲ Next.js 15.5.18
+   - Local:        http://127.0.0.1:3003
+   - Network:      http://127.0.0.1:3003
+
+ ✓ Starting...
+ ✓ Ready in 5.3s
+[?25h

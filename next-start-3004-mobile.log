@@ -1,0 +1,10 @@
+
+> sharo-kebab-loyalty@1.0.0 start
+> next start --hostname 127.0.0.1 --port 3004
+
+   ▲ Next.js 15.5.18
+   - Local:        http://127.0.0.1:3004
+   - Network:      http://127.0.0.1:3004
+
+ ✓ Starting...
+ ✓ Ready in 2.1s
