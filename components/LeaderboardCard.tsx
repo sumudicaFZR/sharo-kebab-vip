@@ -13,7 +13,7 @@ const legends = [
 
 export function LeaderboardCard() {
   return (
-    <SpotlightCard className="sound-hover rounded-lg border border-cream/10 bg-white/[0.045] p-5 backdrop-blur-xl lg:p-6">
+    <SpotlightCard className="leaderboard-card sound-hover rounded-lg border border-cream/10 bg-white/[0.045] p-5 backdrop-blur-xl lg:p-6">
       <div className="flex items-end justify-between gap-4">
         <div>
           <p className="text-xs font-black uppercase tracking-[0.24em] text-ember">Clasament pe ultimele 60 de zile</p>

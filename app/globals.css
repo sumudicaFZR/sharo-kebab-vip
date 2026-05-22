@@ -1925,3 +1925,107 @@ select:focus {
     transform: translate3d(0, 0, 0) scale(1.045);
   }
 }
+
+/* Mobile-only ordering fix. Desktop layout stays unchanged. */
+@media (max-width: 767px) {
+  main.cinematic-grid {
+    padding-bottom: 120px !important;
+  }
+
+  .customer-page-shell {
+    display: flex;
+    flex-direction: column;
+    gap: 1.15rem;
+    padding-bottom: 120px !important;
+  }
+
+  .customer-page-shell > header {
+    order: 0;
+    margin-bottom: 0.2rem;
+  }
+
+  .mobile-hero-section,
+  .mobile-hero-section > section,
+  .mobile-hero-section > aside,
+  .hero-business-visual,
+  .mobile-products-section,
+  .mobile-join-section {
+    display: contents;
+  }
+
+  .hero-title-wrap,
+  .mobile-value-line,
+  .mobile-hero-actions {
+    display: none !important;
+  }
+
+  .loyalty-reference-card {
+    order: 1;
+  }
+
+  .qr-hero-card {
+    order: 2;
+  }
+
+  .leaderboard-card {
+    order: 3;
+  }
+
+  .offer-hero-card {
+    order: 4;
+  }
+
+  .mobile-products-panel {
+    order: 5;
+  }
+
+  .mobile-join-form {
+    order: 6;
+  }
+
+  .mobile-quick-actions {
+    order: 7;
+  }
+
+  .delivery-hero-card {
+    order: 8;
+  }
+
+  .mobile-feature-tile {
+    order: 9;
+  }
+
+  .mobile-reward-card {
+    order: 10;
+  }
+
+  .qr-hero-card,
+  .leaderboard-card,
+  .offer-hero-card,
+  .mobile-products-panel,
+  .mobile-join-form,
+  .mobile-quick-actions,
+  .delivery-hero-card,
+  .mobile-feature-tile,
+  .mobile-reward-card,
+  .loyalty-reference-card {
+    width: 100%;
+  }
+
+  .qr-frame {
+    height: min(58vw, 14rem);
+    width: min(58vw, 14rem);
+  }
+
+  .offer-hero-card {
+    overflow: hidden;
+  }
+
+  .offer-food-image {
+    min-height: 14.5rem;
+  }
+
+  .mobile-products-panel {
+    padding: 1.1rem;
+  }
+}

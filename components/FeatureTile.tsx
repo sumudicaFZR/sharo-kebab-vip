@@ -1,9 +1,23 @@
 import type { LucideIcon } from "lucide-react";
 import { SpotlightCard } from "@/components/SpotlightCard";
 
-export function FeatureTile({ icon: Icon, kicker, title, text, action }: { icon: LucideIcon; kicker: string; title: string; text: string; action: string }) {
+export function FeatureTile({
+  icon: Icon,
+  kicker,
+  title,
+  text,
+  action,
+  className = ""
+}: {
+  icon: LucideIcon;
+  kicker: string;
+  title: string;
+  text: string;
+  action: string;
+  className?: string;
+}) {
   return (
-    <SpotlightCard className="sound-hover rounded-lg border border-cream/10 bg-white/[0.045] p-5 backdrop-blur-xl">
+    <SpotlightCard className={`sound-hover rounded-lg border border-cream/10 bg-white/[0.045] p-5 backdrop-blur-xl ${className}`}>
       <div className="flex items-start justify-between gap-3">
         <div>
           <p className="text-xs font-black uppercase tracking-[0.24em] text-ember">{kicker}</p>

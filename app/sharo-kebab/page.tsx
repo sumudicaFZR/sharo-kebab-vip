@@ -54,7 +54,7 @@ export default function SharoLandingPage() {
 
           <aside className="grid gap-5">
             <StampCard points={7} />
-            <SpotlightCard className="sound-hover rounded-lg border border-ember/30 bg-ember/10 p-5 backdrop-blur-xl">
+            <SpotlightCard className="mobile-reward-card sound-hover rounded-lg border border-ember/30 bg-ember/10 p-5 backdrop-blur-xl">
               <div className="flex items-center justify-between gap-4">
                 <Gift className="h-9 w-9 text-ember" />
                 <SpotlightLink href="/sharo-kebab/loyalty" className="rounded-md border border-ember/30 px-4 py-2 text-sm font-black text-ember">
@@ -69,9 +69,9 @@ export default function SharoLandingPage() {
           </aside>
         </MotionSection>
 
-        <MotionSection id="join" className="grid gap-7 lg:grid-cols-[0.9fr_1.1fr] lg:gap-8">
+        <MotionSection id="join" className="mobile-join-section grid gap-7 lg:grid-cols-[0.9fr_1.1fr] lg:gap-8">
           <LoyaltyJoinForm />
-          <div className="grid gap-5 sm:grid-cols-2">
+          <div className="mobile-quick-actions grid gap-5 sm:grid-cols-2">
             <SpotlightLink href="/sharo-kebab/loyalty" className="rounded-lg border border-cream/10 bg-white/[0.045] p-5 backdrop-blur-xl">
               <QrCode className="h-7 w-7 text-ember" />
               <h3 className="mt-4 text-xl font-black">QR de ștampilă</h3>
@@ -95,11 +95,11 @@ export default function SharoLandingPage() {
           </div>
         </MotionSection>
 
-        <MotionSection className="mt-10 grid gap-5 lg:grid-cols-[0.78fr_0.78fr_0.78fr_2.05fr]">
-          <FeatureTile icon={Bot} kicker="AI recomandă" title="Cheese Pui + Ayran" text="Combo-ul preferat azi" action="Comandă acum" />
-          <FeatureTile icon={Sparkles} kicker="Oferte VIP" title="-50% Cheese Kebab" text="La 10 ștampile" action="Vezi oferta" />
-          <FeatureTile icon={MessageCircle} kicker="Comandă rapid" title="WhatsApp" text="Comandă pe WhatsApp" action="Comandă acum" />
-          <div className="rounded-lg border border-cream/10 bg-white/[0.045] p-6 backdrop-blur-xl">
+        <MotionSection className="mobile-products-section mt-10 grid gap-5 lg:grid-cols-[0.78fr_0.78fr_0.78fr_2.05fr]">
+          <FeatureTile className="mobile-feature-tile" icon={Bot} kicker="AI recomandă" title="Cheese Pui + Ayran" text="Combo-ul preferat azi" action="Comandă acum" />
+          <FeatureTile className="mobile-feature-tile" icon={Sparkles} kicker="Oferte VIP" title="-50% Cheese Kebab" text="La 10 ștampile" action="Vezi oferta" />
+          <FeatureTile className="mobile-feature-tile" icon={MessageCircle} kicker="Comandă rapid" title="WhatsApp" text="Comandă pe WhatsApp" action="Comandă acum" />
+          <div className="mobile-products-panel rounded-lg border border-cream/10 bg-white/[0.045] p-6 backdrop-blur-xl">
             <div className="mb-5 flex items-center justify-between gap-4">
               <p className="text-xs font-black uppercase tracking-[0.24em] text-ember">Produse populare</p>
               <Link href="/sharo-kebab/menu" className="text-sm text-smoke">Vezi toate →</Link>

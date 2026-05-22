@@ -35,7 +35,7 @@ export function LoyaltyJoinForm() {
   }
 
   return (
-    <SpotlightCard className="glass sound-hover rounded-lg p-5">
+    <SpotlightCard className="mobile-join-form glass sound-hover rounded-lg p-5">
     <form onSubmit={submit}>
       <p className="text-xs font-bold uppercase tracking-[0.24em] text-ember">VIP Club</p>
       <h2 className="mt-2 text-2xl font-black text-cream">Intra in VIP Club</h2>
