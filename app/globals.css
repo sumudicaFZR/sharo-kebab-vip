@@ -2029,3 +2029,245 @@ select:focus {
     padding: 1.1rem;
   }
 }
+
+.product-modal-backdrop {
+  animation: modal-fade 180ms ease-out;
+}
+
+.product-modal-panel {
+  animation: modal-rise 220ms ease-out;
+}
+
+.product-premium:focus-visible {
+  outline: 2px solid rgba(255, 122, 26, 0.8);
+  outline-offset: 4px;
+}
+
+/* Final motion/nav pass: animation only, no layout redesign. */
+.sharo-brand-mark {
+  position: relative;
+  isolation: isolate;
+  animation: sharo-brand-enter 720ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.sharo-brand-mark::before {
+  content: "";
+  position: absolute;
+  inset: -1.1rem -2.3rem;
+  z-index: -1;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(255, 122, 26, 0.28), transparent 58%),
+    radial-gradient(circle at 24% 50%, rgba(225, 45, 33, 0.16), transparent 42%);
+  filter: blur(18px);
+  opacity: 0.78;
+  animation: sharo-ambient-pulse 5.8s ease-in-out infinite;
+}
+
+.sharo-brand-mark::after {
+  content: "";
+  position: absolute;
+  inset: -0.65rem -1.6rem;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 12% 35%, rgba(255, 191, 96, 0.52) 0 1px, transparent 2px),
+    radial-gradient(circle at 82% 18%, rgba(255, 122, 26, 0.42) 0 1px, transparent 2px),
+    radial-gradient(circle at 68% 78%, rgba(255, 222, 161, 0.35) 0 1px, transparent 2px);
+  background-size: 7.5rem 5.5rem, 9rem 6rem, 6rem 7rem;
+  opacity: 0.26;
+  animation: sharo-brand-particles 9s linear infinite;
+}
+
+.sharo-brand-copy {
+  position: relative;
+}
+
+.sharo-brand-copy::before {
+  content: "";
+  position: absolute;
+  inset: -0.45rem -0.95rem;
+  z-index: -1;
+  border-radius: 1rem;
+  background: linear-gradient(90deg, transparent, rgba(255, 122, 26, 0.13), transparent);
+  opacity: 0.72;
+  transform: translateX(-18%);
+  animation: sharo-title-aurora 6.5s ease-in-out infinite;
+}
+
+.sharo-logo-glow {
+  animation: sharo-logo-float 5.4s ease-in-out infinite, logo-breathe 4.8s ease-in-out infinite;
+}
+
+.sharo-brand-glide {
+  letter-spacing: 0.055em;
+  text-shadow:
+    0 0 12px rgba(255, 122, 26, 0.52),
+    0 0 34px rgba(255, 122, 26, 0.22),
+    0 12px 28px rgba(0, 0, 0, 0.78);
+  animation: sharo-title-float 5.6s ease-in-out infinite, sharo-title-glow 4.8s ease-in-out infinite;
+}
+
+.sharo-address-glide {
+  animation: sharo-address-in 850ms cubic-bezier(0.22, 1, 0.36, 1) 120ms both, address-glide 5.6s ease-in-out 900ms infinite;
+}
+
+.mobile-nav-item {
+  position: relative;
+  overflow: hidden;
+  border: 0;
+  background: transparent;
+  color: rgba(247, 228, 188, 0.8);
+  transition: color 180ms ease, transform 180ms ease;
+}
+
+.mobile-nav-item:first-child {
+  background: transparent;
+  color: rgba(247, 228, 188, 0.8);
+}
+
+.mobile-nav-item:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+.mobile-nav-item-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.mobile-nav-item svg {
+  color: currentColor;
+  filter: drop-shadow(0 0 10px rgba(255, 122, 26, 0.18));
+}
+
+.mobile-nav-item-active {
+  color: #ff9c27;
+}
+
+.mobile-nav-active-pill {
+  position: absolute;
+  inset: 0;
+  border-radius: 17px;
+  background:
+    radial-gradient(circle at 50% 10%, rgba(255, 200, 114, 0.18), transparent 55%),
+    rgba(255, 122, 26, 0.14);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 122, 26, 0.22),
+    0 0 24px rgba(255, 122, 26, 0.18);
+}
+
+@keyframes sharo-brand-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes sharo-logo-float {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -3px, 0);
+  }
+}
+
+@keyframes sharo-title-float {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -2px, 0);
+  }
+}
+
+@keyframes sharo-title-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 0 rgba(255, 122, 26, 0));
+  }
+  50% {
+    filter: drop-shadow(0 0 12px rgba(255, 122, 26, 0.3));
+  }
+}
+
+@keyframes sharo-address-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 0.92;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sharo-ambient-pulse {
+  0%, 100% {
+    opacity: 0.52;
+    transform: scale(0.96);
+  }
+  50% {
+    opacity: 0.86;
+    transform: scale(1.03);
+  }
+}
+
+@keyframes sharo-brand-particles {
+  from {
+    transform: translate3d(0, 4px, 0);
+  }
+  to {
+    transform: translate3d(18px, -12px, 0);
+  }
+}
+
+@keyframes sharo-title-aurora {
+  0%, 100% {
+    opacity: 0.28;
+    transform: translateX(-18%);
+  }
+  50% {
+    opacity: 0.74;
+    transform: translateX(18%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sharo-brand-mark,
+  .sharo-brand-mark::before,
+  .sharo-brand-mark::after,
+  .sharo-brand-copy::before,
+  .sharo-logo-glow,
+  .sharo-brand-glide,
+  .sharo-address-glide {
+    animation: none !important;
+  }
+}
+
+@keyframes modal-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modal-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

@@ -48,7 +48,7 @@ export function HeroQrOffer() {
         <div className="grid sm:grid-cols-[1fr_1.05fr]">
           <div className="offer-food-image relative min-h-56 overflow-hidden bg-gradient-to-br from-ember/30 via-chili/20 to-coal sm:min-h-full">
             <Image
-              src="/images/products/cheese-pui.jpg"
+              src="/images/products/shawerma-cheese.jpg"
               alt="Cheese Kebab + Ayran"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"

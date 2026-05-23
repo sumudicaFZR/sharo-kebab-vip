@@ -15,17 +15,21 @@ export const business: Business = {
 };
 
 export const menuItems: MenuItem[] = [
-  ["cheese-pui", "Cheese Pui", "Cheese Kebab", "Pui rumenit, branza topita, sos SHARO si legume crocante.", 29, true, "/images/products/cheese-pui.jpg"],
-  ["cheese-vita", "Cheese Vita", "Cheese Kebab", "Vita suculenta, cascaval topit, sos rosu usor picant.", 34, true, "/images/products/cheese-vita.jpg"],
-  ["cheese-berbecut", "Cheese Berbecut", "Cheese Kebab", "Berbecut aromat, branza cremoasa si mix fresh.", 36, true, "/images/products/cheese-berbecut.jpg"],
+  ["cheese-pui", "Cheese Pui", "Cheese Kebab", "Pui rumenit, branza topita, sos SHARO si legume crocante.", 29, true, "/images/products/shawerma-cheese.jpg"],
+  ["cheese-vita", "Cheese Vita", "Cheese Kebab", "Vita suculenta, cascaval topit, sos rosu usor picant.", 34, true, "/images/products/shawerma-cheese.jpg"],
+  ["cheese-berbecut", "Cheese Berbecut", "Cheese Kebab", "Berbecut aromat, branza cremoasa si mix fresh.", 36, true, "/images/products/shawerma-berbecut-vita.jpg"],
   ["arabeasca-pui", "Arabeasca Pui", "Arabeasca", "Lipie arabeasca presata, pui, cartofi si sosuri echilibrate.", 31, true, "/images/products/arabeasca-pui.jpg"],
-  ["arabeasca-vita", "Arabeasca Vita", "Arabeasca", "Vita frageda in lipie presata, textura crocanta si sos intens.", 36, false, "/images/products/arabeasca-pui.jpg"],
-  ["arabeasca-berbecut", "Arabeasca Berbecut", "Arabeasca", "Berbecut, condimente calde si lipie crocanta.", 38, false, "/images/products/cheese-berbecut.jpg"],
-  ["shaorma-mare-pui", "Shaorma Mare Pui", "Shaorma", "Portie generoasa pentru foame serioasa.", 28, false, "/images/products/cheese-pui.jpg"],
-  ["shaorma-mare-vita", "Shaorma Mare Vita", "Shaorma", "Vita, cartofi, salate si sos SHARO.", 33, false, "/images/products/cheese-vita.jpg"],
-  ["falafel-cheese", "Falafel Cheese", "Vegetarian", "Falafel crocant cu branza si sos tahini.", 27, false, ""],
-  ["crispy-cheese", "Crispy Cheese", "Crispy", "Crispy strips, cheddar si sos dulce-picant.", 30, false, ""],
-  ["cartofi-prajiti", "Cartofi Prajiti", "Side", "Cartofi aurii, sare fina, sos optional.", 12, true, ""],
+  ["arabeasca-vita", "Arabeasca Vita", "Arabeasca", "Vita frageda in lipie presata, textura crocanta si sos intens.", 36, false, "/images/products/arabeasca-berbecut-vita.jpg"],
+  ["arabeasca-berbecut", "Arabeasca Berbecut", "Arabeasca", "Berbecut, condimente calde si lipie crocanta.", 38, false, "/images/products/arabeasca-berbecut-vita.jpg"],
+  ["shaorma-mare-pui", "Shaorma Mare Pui", "Shaorma", "Portie generoasa pentru foame serioasa.", 28, false, "/images/products/shawerma-pui.jpg"],
+  ["shaorma-mare-vita", "Shaorma Mare Vita", "Shaorma", "Vita, cartofi, salate si sos SHARO.", 33, false, "/images/products/shawerma-berbecut-vita.jpg"],
+  ["falafel-farfurie", "Falafel Farfurie", "Vegetarian", "Falafel crocant, cartofi si sos tahini.", 29, false, "/images/products/falafel-farfurie.jpg"],
+  ["falafel-lipie", "Falafel Lipie", "Vegetarian", "Falafel crocant in lipie SHARO, legume si sos.", 27, false, "/images/products/falafel-lipie.jpg"],
+  ["crispy-farfurie", "Crispy Farfurie", "Crispy", "Crispy strips cu cartofi, salata si sos dulce-picant.", 32, false, "/images/products/crispy-farfurie.jpg"],
+  ["crispy-lipie", "Crispy Lipie", "Crispy", "Crispy in lipie, cartofi, castraveti murati si sos SHARO.", 30, false, "/images/products/crispy-lipie.jpg"],
+  ["berbecut-farfurie", "Berbecut Farfurie", "Farfurie", "Berbecut suculent, cartofi, salata si sosuri.", 39, false, "/images/products/berbecut-farfurie.jpg"],
+  ["aripioare", "Aripioare", "Crispy", "Aripioare crocante cu cartofi si salata fresh.", 28, false, "/images/products/aripioare.jpg"],
+  ["cartofi-prajiti", "Cartofi Prajiti", "Side", "Cartofi aurii, sare fina, sos optional.", 12, true, "/images/products/cartofi-prajiti.jpg"],
   ["ayran", "Ayran", "Bauturi", "Ayran rece, perfect langa kebab.", 8, true, "/images/products/ayran.jpg"],
   ["baclava-cu-lapte", "Baclava cu Lapte", "Desert", "Desert rece, cremos, cu fistic si lapte.", 17, true, "/images/products/baclava.jpg"]
 ].map(([id, name, category, description, price, is_featured, image_url]) => ({

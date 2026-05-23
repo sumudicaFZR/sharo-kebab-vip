@@ -77,7 +77,7 @@ export default function SharoLandingPage() {
               <h3 className="mt-4 text-xl font-black">QR de ștampilă</h3>
               <p className="mt-2 text-sm text-smoke">După plată, cere QR-ul secret ținut la casă.</p>
             </SpotlightLink>
-            <SpotlightLink href={getWhatsAppUrl()} className="rounded-lg border border-cream/10 bg-white/[0.045] p-5 backdrop-blur-xl">
+            <SpotlightLink data-mobile-section="whatsapp" href={getWhatsAppUrl()} className="rounded-lg border border-cream/10 bg-white/[0.045] p-5 backdrop-blur-xl">
               <MessageCircle className="h-7 w-7 text-ember" />
               <h3 className="mt-4 text-xl font-black">Comandă WhatsApp</h3>
               <p className="mt-2 text-sm text-smoke">Mesaj pregătit: Salut SHARO KEBAB, vreau să comand.</p>
@@ -87,7 +87,7 @@ export default function SharoLandingPage() {
               <h3 className="mt-4 text-xl font-black">Vezi meniul</h3>
               <p className="mt-2 text-sm text-smoke">Cheese, Arăbească, shaorma, sides și desert.</p>
             </SpotlightLink>
-            <SpotlightLink href="/sharo-kebab/review" className="rounded-lg border border-cream/10 bg-white/[0.045] p-5 backdrop-blur-xl">
+            <SpotlightLink data-mobile-section="review" href="/sharo-kebab/review" className="rounded-lg border border-cream/10 bg-white/[0.045] p-5 backdrop-blur-xl">
               <Star className="h-7 w-7 text-ember" />
               <h3 className="mt-4 text-xl font-black">Review Google</h3>
               <p className="mt-2 text-sm text-smoke">Lasă-ne un review și ajută-ne să creștem.</p>

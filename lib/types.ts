@@ -24,6 +24,18 @@ export type MenuItem = {
   created_at: string;
 };
 
+export type GramajLine = {
+  label: string;
+  value: string;
+};
+
+export type ProductGramaj = {
+  template: string;
+  total: string;
+  lines: GramajLine[];
+  note?: string;
+};
+
 export type Customer = {
   id: string;
   business_id: string;

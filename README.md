@@ -18,20 +18,28 @@ Pe PowerShell, foloseste `npm.cmd`, nu `npm`, daca execution policy blocheaza sc
 Background:
 
 - Pune fotografia reala cu storefront / restaurant SHARO KEBAB la `public/images/sharo-bg.jpg`.
-- App-ul aplica automat: fixed cover, blur `18px`, brightness `25%`, scale `1.12`, overlay negru puternic, glow orange/red, smoke/fog, vignette, grain si parallax subtil.
+- App-ul aplica automat: fixed cover, blur subtil, brightness/contrast cinematic, overlay negru, glow orange/red, smoke/fog, vignette, grain si parallax subtil.
 - Daca imaginea lipseste, ramane fallback gradient dark cinematic.
 
 Product images:
 
 - Pune imaginile produselor in `public/images/products/`:
-  - `cheese-pui.jpg`
-  - `cheese-vita.jpg`
-  - `cheese-berbecut.jpg`
+  - `shawerma-pui.jpg`
+  - `shawerma-cheese.jpg`
+  - `shawerma-berbecut-vita.jpg`
   - `arabeasca-pui.jpg`
-  - `ayran.jpg`
+  - `arabeasca-berbecut-vita.jpg`
+  - `crispy-farfurie.jpg`
+  - `crispy-lipie.jpg`
+  - `falafel-farfurie.jpg`
+  - `falafel-lipie.jpg`
+  - `berbecut-farfurie.jpg`
+  - `aripioare.jpg`
+  - `cartofi-prajiti.jpg`
   - `baclava.jpg`
+  - `ayran.jpg`
 - Daca lipsesc, cardurile folosesc placeholder gradient premium si nu crapa.
-- In acest demo exista JPG-uri generate local pentru produse. Nu sunt poze oficiale Glovo/Wolt. Pentru productie, foloseste asset-uri primite de la SHARO KEBAB sau imagini pentru care restaurantul are drept de folosire.
+- In acest demo exista JPG-uri optimizate local din asset-urile SHARO incarcate in proiect.
 - Product cardurile au hover zoom, light sweep, steam/smoke, glow border si fallback gradient animat.
 
 Premium UX:

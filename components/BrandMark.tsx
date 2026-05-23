@@ -29,9 +29,9 @@ export function BrandMark({ compact = false, size = "normal" }: BrandMarkProps) 
   }
 
   return (
-    <div className="flex min-w-0 items-center justify-center gap-3 sm:gap-5">
+    <div className="sharo-brand-mark flex min-w-0 items-center justify-center gap-3 sm:gap-5">
       {logo}
-      <div className="min-w-0 text-center">
+      <div className="sharo-brand-copy min-w-0 text-center">
         <strong className={`sharo-brand-glide ${titleSize} block font-black uppercase leading-none tracking-[0.04em] text-cream`}>
           SHARO KEBAB
         </strong>
